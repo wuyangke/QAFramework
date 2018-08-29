@@ -1,0 +1,46 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1535107614216" stop="1535107614216">
+  <description>Unloadable or unexecutable test.
+
+    A Failure case is placed in a test suite to indicate the presence of a
+    test that could not be loaded or executed. A common example is a test
+    module that fails to import.
+    
+    </description>
+  <name>nose.failure</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1535107614216" status="broken" stop="1535107614216">
+      <name>test.apitest.test_api_advent</name>
+      <failure>
+        <message>ModuleNotFoundError: No module named 'utils'</message>
+        <stack-trace>Traceback (most recent call last):
+  File "c:\program files\python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "c:\program files\python37\lib\unittest\case.py", line 615, in run
+    testMethod()
+  File "c:\program files\python37\lib\site-packages\nose\failure.py", line 39, in runTest
+    raise self.exc_val.with_traceback(self.tb)
+  File "c:\program files\python37\lib\site-packages\nose\loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "c:\program files\python37\lib\site-packages\nose\importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "c:\program files\python37\lib\site-packages\nose\importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "c:\program files\python37\lib\imp.py", line 235, in load_module
+    return load_source(name, filename, file)
+  File "c:\program files\python37\lib\imp.py", line 172, in load_source
+    module = _load(spec)
+  File "&lt;frozen importlib._bootstrap&gt;", line 696, in _load
+  File "&lt;frozen importlib._bootstrap&gt;", line 677, in _load_unlocked
+  File "&lt;frozen importlib._bootstrap_external&gt;", line 728, in exec_module
+  File "&lt;frozen importlib._bootstrap&gt;", line 219, in _call_with_frames_removed
+  File "E:\SoftwareEngineer\Python\Projects\QAFramework\test\apitest\test_api_advent.py", line 2, in &lt;module&gt;
+    from utils.config import Config, DATA_PATH
+ModuleNotFoundError: No module named 'utils'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
